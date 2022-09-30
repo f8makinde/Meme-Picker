@@ -30,3 +30,7 @@
        return emotionRadios.innerHTML = radio;
   }
   renderEmotionsRadios(catsData);
+
+  emotionRadios.addEventListener("change", function(e){
+      document.getElementById(e.target.id).parentElement.classList.add("highlight");
+  })
