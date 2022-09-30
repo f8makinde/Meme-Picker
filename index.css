@@ -10,7 +10,7 @@ h1, h2, h3{
 }
 
 h1, h2{
-    color: #EED6D3;
+    color: whitesmoke;
     margin: 0;
 }
 
@@ -29,7 +29,7 @@ h3{
 /* layout */
 
 header{
-    background-color: #67595E;
+    background-color: rgb(92, 11, 119);
 }
 
 .header-inner{
@@ -57,7 +57,7 @@ header{
 .emotion-radios{
     display: flex;
     flex-direction: column;
-    border: 1px solid #bcbcbc;
+    border: 4px solid rgb(92, 11, 119);
     border-radius: 5px;
 }
 
@@ -102,8 +102,8 @@ input[type="radio"]{
 }
 
 .get-image-btn{
-    background-color: #67595e;
-    color: #eed6d3;
+    background-color: rgb(92, 11, 119);
+    color: whitesmoke;
     padding: 15px 19px;
     font-size: 24px;
     border: none;
