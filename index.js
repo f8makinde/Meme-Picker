@@ -42,7 +42,7 @@
    document.getElementById(e.target.id).parentElement.classList.add("highlight")
   }
   
- getImageBtn.addEventListener("click", getMatchingCatsArray);
+ getImageBtn.addEventListener("click", renderCat);
 
  function getMatchingCatsArray(){
 
@@ -63,9 +63,17 @@
  }
  function getSingleCatObject(){
     
+    const catArray = getMatchingCatsArray()
+    if(catArray.length === 1){
+     return catArray[0];
+    }
+    else{
+      const randomNumber = Math.floor(Math.random() * catArray.length)
+      console.log(catArray[randomNumber])
+    }
 }
 
 function renderCat(){
-    
+    getSingleCatObject()
 }
  
