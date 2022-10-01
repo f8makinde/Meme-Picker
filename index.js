@@ -45,17 +45,27 @@
  getImageBtn.addEventListener("click", getMatchingCatsArray);
 
  function getMatchingCatsArray(){
-    if(document.querySelector("input[type='checkbox']:checked")){
-        const isGif = checkbox.checked;
-        console.log(isGif)
-    }
-    else{
-      console.log(false)
-    }
 
     if(document.querySelector("input[type= 'radio']:checked")){
-        const btn = document.querySelector("input[type= 'radio']:checked").value;
-        console.log(btn)
+        const selectedEmotion = document.querySelector("input[type= 'radio']:checked").value;
+        const isGif = checkbox.checked;
+        const matchingCatsArray = catsData.filter(function(cat){
+          if(isGif){
+            return cat.emotionTags.includes(selectedEmotion) && cat.isGif;
+          }
+          else{
+          return cat.emotionTags.includes(selectedEmotion);
+          }
+        })
+      return matchingCatsArray;
     }
 
  }
+ function getSingleCatObject(){
+    
+}
+
+function renderCat(){
+    
+}
+ 
