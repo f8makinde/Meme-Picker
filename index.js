@@ -98,7 +98,7 @@
   const emotions = getEmotionArray(cats);
   for(let emotion of emotions){
      radio += `<div class="radio">
-       <label for="${emotion}" id="emotion" class="emt"><span>${emotion}</span></label>
+       <label for="${emotion}" id="emotion">${emotion}</label>
        <input type="radio" value = ${emotion} id=${emotion} name = "emotion" class="radio-btn">
      </div>
      `
