@@ -48,7 +48,7 @@ header{
 .controls-container{
     display: flex;
     flex-direction: column;
-    width: 200px;
+    max-width: 50%;
     margin: 0px auto;
 }
 
@@ -99,6 +99,7 @@ input[type="radio"]{
 .gifs-check-label{
     width: unset;
     margin-right: 5px;
+    font-size: 1.5rem;
 }
 
 .get-image-btn{
@@ -109,6 +110,10 @@ input[type="radio"]{
     border: none;
     border-radius: 5px;
     margin-bottom: 8px;
+}
+input[type= checkbox]{
+    width: 2em;
+    height: 1.5em;
 }
 
 /* modal */
@@ -158,4 +163,22 @@ input[type="radio"]{
     color: #bd301d;
     font-weight: bold;
     accent-color: #bd301d;
+}
+#emotion{
+    font-size: 1.5rem;
+}
+.get-image-btn{
+    width: 50%;
+    margin: 0 auto;
+}
+input[type=radio] {
+    height: 2em;
+    width: 2em;
+
+}
+
+@media (max-width: 675px){
+    #emotion{
+        font-size: 1.5rem;
+    }
 }
