@@ -177,8 +177,15 @@ input[type=radio] {
 
 }
 
-@media (max-width: 675px){
-    #emotion{
-        font-size: 1.5rem;
+@media (max-width: 450px){
+    /* .emotion{
+        font-size: 2.5rem;
+        font-weight: 600;
+    } */
+    label{
+        font-size: 2.5rem;
     }
-}
+    .controls-container{
+    height: 100vh;
+    }
+    }
