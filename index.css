@@ -164,9 +164,15 @@ input[type= checkbox]{
     font-weight: bold;
     accent-color: #bd301d;
 }
+
 #emotion{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
+@media only screen and (min-width: 675px) {
+    #emotion{
+        font-size: 2.5rem;
+    }
+  }
 .get-image-btn{
     width: 50%;
     margin: 0 auto;
@@ -177,15 +183,3 @@ input[type=radio] {
 
 }
 
-@media (max-width: 450px){
-    /* .emotion{
-        font-size: 2.5rem;
-        font-weight: 600;
-    } */
-    label{
-        font-size: 2.5rem;
-    }
-    .controls-container{
-    height: 100vh;
-    }
-    }

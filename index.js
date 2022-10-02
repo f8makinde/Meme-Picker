@@ -1,4 +1,6 @@
    import { catsData } from "/data.js";
+
+
   const emotionRadios = document.getElementById('emotion-radios');
   const getImageBtn = document.getElementById("get-image-btn");
   const checkbox = document.getElementById("gifs-only-option");
@@ -87,7 +89,7 @@
      }
     return emotionArray;
  }
-getEmotionArray(catsData);
+// getEmotionArray(catsData);
 
 
 
@@ -96,11 +98,11 @@ getEmotionArray(catsData);
   const emotions = getEmotionArray(cats);
   for(let emotion of emotions){
      radio += `<div class="radio">
-       <label for="${emotion}" id="emotion" class="emotion">${emotion}</label>
+       <label for="${emotion}" id="emotion" class="emt"><span>${emotion}</span></label>
        <input type="radio" value = ${emotion} id=${emotion} name = "emotion" class="radio-btn">
      </div>
      `
   }
-  return emotionRadios.innerHTML = radio;
+   emotionRadios.innerHTML = radio;
 }
 renderEmotionsRadios(catsData);
